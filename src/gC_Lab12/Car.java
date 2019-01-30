@@ -3,10 +3,11 @@ package gC_Lab12;
 public class Car {
 
 // instance variable declarations	
-	private String carMake;
-	private String carModel;
-	private int carYear;
-	private double carPrice;
+	protected String carMake;
+	protected String carModel;
+	protected int carYear;
+	protected double carPrice;
+	protected double carMiles;
 
 // no arguments constructors for all 4 data sets
 	public Car() {
@@ -40,6 +41,12 @@ public class Car {
 // getter for car price
 	public double getPrice() {
 		return carPrice;
+
+	}
+
+// getter for mileage 
+	public double getMiles() {
+		return carMiles;
 	}
 
 // setter for car make
@@ -64,8 +71,21 @@ public class Car {
 		this.carPrice = carPrice;
 	}
 
+// setter for mileage for used cars without user input
+
+	public void setMiles(double carMiles) {
+		this.carMiles = carMiles;
+	}
+
 // resuable header
 	public static void printHeader() {
+		System.out.println("Current Inventory Report:");
+		System.out.println("\n");
+		System.out.println("=MAKE===========MODEL===========YEAR=============PRICE======");
+
+	}
+
+	public static void printLargeHeader() {
 		System.out.println("Current Inventory Report:");
 		System.out.println("\n");
 		System.out.println("=MAKE===========MODEL===========YEAR=============PRICE======");

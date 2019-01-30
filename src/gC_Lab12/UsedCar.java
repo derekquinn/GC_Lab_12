@@ -4,24 +4,19 @@ import java.util.ArrayList;
 
 public class UsedCar extends Car {
 
-	public static void main(String[] Args) {
+// constructor experiment to build usedCar object
 
-// display a list of 6 cars (3 new and 3 used)
+	public UsedCar(int carYear, String carMake, String carModel, double carPrice, double carMiles) {
+		super(carYear, carMake, carModel, carPrice);
+		this.carMiles = carMiles;
 
-		ArrayList<Car> carsList = new ArrayList<>();
+	}
 
-		carsList.add(new UsedCar());
-		carsList.add(new UsedCar());
-		carsList.add(new UsedCar());
-		carsList.add(new UsedCar());
-		carsList.add(new UsedCar());
+	@Override
+	public String toString() {
 
-		carsList.add(new Car());
-		carsList.add(new Car());
-		carsList.add(new Car());
-		carsList.add(new Car());
-		carsList.add(new Car());
-
+		return String.format("%-10s%-10s%-5d%2s%10.2f%10.1f%-12s", carMake, carModel, carYear, "$", carPrice, carMiles,
+				" miles (Used)");
 	}
 
 }
