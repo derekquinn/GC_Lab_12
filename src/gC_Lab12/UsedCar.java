@@ -1,7 +1,5 @@
 package gC_Lab12;
 
-import java.util.ArrayList;
-
 public class UsedCar extends Car {
 
 // constructor experiment to build usedCar object

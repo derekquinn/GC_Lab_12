@@ -79,23 +79,24 @@ public class Car {
 
 // resuable header
 	public static void printHeader() {
-		System.out.println("Current Inventory Report:");
+
 		System.out.println("\n");
 		System.out.println("=MAKE===========MODEL===========YEAR=============PRICE======");
 
 	}
 
 	public static void printLargeHeader() {
-		System.out.println("Current Inventory Report:");
+
 		System.out.println("\n");
-		System.out.println("=MAKE===========MODEL===========YEAR=============PRICE======");
+		System.out.println("=MAKE===========MODEL======YEAR=======PRICE========MILEAGE=================");
 
 	}
 
 	@Override
 	public String toString() {
 
-		return String.format("%-15s %-10s %-10s %-1s %-10s %-10s", carMake, carModel, carYear, "$", carPrice, "------------------ (NEW)");
+		return String.format("%-15s %-10s %-10s %-1s %-10s %-10s", carMake, carModel, carYear, "$", carPrice,
+				"------------------ (NEW)");
 	}
 
 }

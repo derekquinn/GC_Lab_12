@@ -1,48 +1,61 @@
 package gC_Lab12;
 
-import java.awt.List;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
-public class JalopySales {
+public class JalopySales extends Car {
 
 	public static void main(String[] args) {
+
 		System.out.println("Welcome to Canton USED Cars.");
-		System.out.println("Owned by the SON of Canton's Cleanest Cars.");
-		System.out.println("\n");
+		System.out.println("Take a look at our current inventory while you are here.");
 
 // display a list of 6 cars (3 new and 3 used)
 
-		// Cars.printLargeHeader();
-
 		ArrayList<Car> jalopyList = new ArrayList<>();
 
-	
-		jalopyList.add(new UsedCar(2003, "Mercedes", "C500", 9313.33, 4343.35));
-		jalopyList.add(new UsedCar(2009, "BMW", "M3", 6313.33, 5543.35));
-		jalopyList.add(new UsedCar(2010, "BMW", "M5", 7313.33, 166343.35));
-
-	
 		jalopyList.add(new Car(2019, "Ford", "Taurus", 3333.33));
 		jalopyList.add(new Car(2019, "Lincoln", "Navigator", 4444.33));
-		jalopyList.add(new Car(2019, "Mercedes", "C300", 3939.04));
+		jalopyList.add(new Car(2019, "Aston Martin", "C300", 3939.04));
+		jalopyList.add(new Car(2020, "Renault", "Breadtruck", 93939.04));
 
-		System.out.println("\n");
+		jalopyList.add(new UsedCar(2003, "Mercedes", "C500", 9313.33, 4343.35));
+		jalopyList.add(new UsedCar(2009, "Renault", "M3", 6313.33, 5543.35));
+		jalopyList.add(new UsedCar(2010, "BMW", "M5", 7313.33, 166343.35));
 
-		//for (int i = 0; i < jalopyList.size(); i++) {
-		for (Car car : jalopyList) {
-//			System.out.printf("%-10s \t", jalopyList.get(i).getMake());
-//			System.out.printf("%-10s \t", jalopyList.get(i).getModel());
-//			System.out.printf("%-10s \t", jalopyList.get(i).getYear());
-//			System.out.printf("%-10s \t", jalopyList.get(i).getPrice());
-//			System.out.printf("%-9s", "$" + jalopyList.get(i).getMiles());
-//			System.out.println("\n");
-			System.out.println(car);
+		printLargeHeader();
+		for (Car f : jalopyList) {
 
+			System.out.println(f);
+			
 		}
-// let the user select 1 car
+	}
+}
 
-		System.out.println("Choose a car to begin the purcahse experience of a lifetime.");
+//		printLargeHeader();
+//	
+//		System.out.println("test regular for loop");
+//
+//		for (int i = 0; i < jalopyList.size(); i++) {
+//			System.out.println((jalopyList.get(i)));
+//		}
+
+
+
+// let the user select 1 car
+//		System.out.println("\n");
+//		System.out.println("Choose a car to begin the purchase experience of a lifetime.");
+//		System.out.println("[TYPE CAR MODEL TO SELECT A CAR]");
+//		Scanner scnr = new Scanner(System.in);
+//		carSelection = scnr.nextLine();
+//
+//		for (Car u : jalopyList) {
+//			if (carSelection.equalsIgnoreCase(carSelection)) {
+//				printLargeHeader();
+//				System.out.println(u);
+//			}
+
 // display selected car info
 
 // ask user if buy car
@@ -50,7 +63,3 @@ public class JalopySales {
 // if do, remove car from list
 
 // display list
-
-	}
-
-}
