@@ -87,7 +87,7 @@ public class Car {
 
 	public static void printLargeHeader() {
 
-		System.out.println("\n");
+	
 		System.out.println("=MAKE===========MODEL======YEAR=======PRICE========MILEAGE=================");
 
 	}
