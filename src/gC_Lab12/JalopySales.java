@@ -19,16 +19,17 @@ public class JalopySales extends Car {
 
 		ArrayList<Car> jalopyList = new ArrayList<>();
 
-		jalopyList.add(new Car(2019, "Ford", "Taurus", 3333.33));
-		jalopyList.add(new Car(2019, "Lincoln", "Navigator", 4444.33));
-		jalopyList.add(new Car(2019, "Aston Martin", "DB2", 3939.04));
-		jalopyList.add(new Car(2020, "Renault", "Breadtruck", 93939.04));
+		jalopyList.add(new Car(2019, "1. Ford", "Taurus", 3333.33));
+		jalopyList.add(new Car(2019, "2. Lincoln", "Navigator", 4444.33));
+		jalopyList.add(new Car(2019, "3. Aston Martin", "DB2", 3939.04));
+		jalopyList.add(new Car(2020, "4. Renault", "Breadtruck", 93939.04));
 
-		jalopyList.add(new UsedCar(2003, "Mercedes", "C500", 9313.33, 4343.35));
-		jalopyList.add(new UsedCar(2009, "Renault", "M3", 6313.33, 5543.35));
-		jalopyList.add(new UsedCar(2010, "BMW", "M5", 7313.33, 166343.35));
+		jalopyList.add(new UsedCar(2003, "5. Mercedes", "C500", 9313.33, 4343.35));
+		jalopyList.add(new UsedCar(2009, "6. Renault", "M3", 6313.33, 5543.35));
+		jalopyList.add(new UsedCar(2010, "7. BMW", "M5", 7313.33, 166343.35));
 
 		printLargeHeader();
+		
 		for (Car f : jalopyList) {
 
 			System.out.println(f);
